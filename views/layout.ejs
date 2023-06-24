@@ -1,0 +1,30 @@
+<!-- Layout Page -->
+
+<html>
+    <head>
+        <title>
+            <%=title%>
+        </title>
+        <link rel="stylesheet" href="/css/layout.css">
+        <link rel="stylesheet" href="/css/header.css">
+        <link rel="stylesheet" href="/css/footer.css">
+        <%- style %>
+    </head>
+
+    <body>
+        <header>
+          <!-- Including haeder by <%- -%>  -->
+         <%- include ('_header'); -%>
+        </header>
+
+        <main id="layout-main">
+            <%- body %>
+        </main>
+        
+        <footer>
+            <%- include ('_footer'); -%>
+        </footer>
+        
+        <%- script %>
+    </body>
+</html>
