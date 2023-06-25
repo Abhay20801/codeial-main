@@ -2,7 +2,8 @@ body {
   margin: 0px;
   text-align: center; }
   body #layout-main {
-    height: 75vh; }
+    height: 75vh;
+    overflow: scroll; }
   body header {
     display: flex;
     background: #0a7dd4;

@@ -6,6 +6,12 @@ const User = require('../models/user');
 module.exports.home = async function (req, res) {
   const posts = Post.find()
     .populate('user')
+    .populate({
+      path:'comments',
+      populate:{
+        path:'user'
+      }
+    })
     .exec()
     .then((posts) => {
       // console.log(posts);
