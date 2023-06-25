@@ -8,7 +8,13 @@ const postSchema = new mongoose.Schema({
     user:{
         type:mongoose.Schema.Types.ObjectId,
         ref: 'User'
-    }
+    },
+    comments:[
+        {
+            type:mongoose.Schema.Types.ObjectId,
+            ref:'Comment',     
+        }
+    ]
 },{
     timestamps :true // this will add createdAt and updatedAt fields to the model automatically 
 });
