@@ -1,10 +1,33 @@
-module.exports.home = function(req,res){
-    // return res.end("<h1>Ecpress is up for codeial!</h1>");
-    console.log(req.cookies);
-    res.cookie('user_id',25);
-     return res.render('home', {
-        title:"Home",
-     });
+const Post = require("../models/post");
 
-}
+const User = require('../models/user');
 
+
+module.exports.home = async function (req, res) {
+  const posts = Post.find()
+    .populate('user')
+    .exec()
+    .then((posts) => {
+      // console.log(posts);
+      return res.render("home", {
+        title: "Codeial | Home",
+        posts: posts,
+      });
+    })
+    .catch((err) => {
+      console.error("Error in sending post to home page");
+      throw err;
+    });
+};
+
+// return res.end("<h1>Ecpress is up for codeial!</h1>");
+//  console.log(req.cookies);
+//  res.cookie('user_id',25);
+// Populate the user of each post
+
+// Post.find({}).populate('user').exec(function(err,posts){
+//     return res.render('home',{
+//         title:'Codeial | Home',
+//         posts : posts
+//     });
+// })

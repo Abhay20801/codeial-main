@@ -7,7 +7,7 @@ const postSchema = new mongoose.Schema({
     },
     user:{
         type:mongoose.Schema.Types.ObjectId,
-        ref: 'user'
+        ref: 'User'
     }
 },{
     timestamps :true // this will add createdAt and updatedAt fields to the model automatically 
