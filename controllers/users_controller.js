@@ -1,10 +1,23 @@
 const User = require('../models/user');
 
 // This is one controller which controls Many users
-module.exports.profile = function(req,res){
+module.exports.profile = async function(req,res){
+  const user = await User.findById(req.params.id);
     return res.render('user_profile', {
         title:"user profile",
+        profile_user:user
      });
+}
+
+// Update the profile name and email
+module.exports.update = async function(req,res){
+  if(req.user.id == req.params.id){
+   const user = await User.findByIdAndUpdate(req.params.id,req.body,{new:true});
+    return res.redirect('back');  
+   
+  } else{
+    return res.status(401).send('Unauthorized');
+  }
 }
 
 // Sign Up Controller

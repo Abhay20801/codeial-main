@@ -13,13 +13,17 @@ module.exports.home = async function (req, res) {
       }
     })
     .exec()
-    .then((posts) => {
+    .then(async (posts) => {
       // console.log(posts);
-      return res.render("home", {
-        title: "Codeial | Home",
-        posts: posts,
-      });
+      const users = await User.find().then((users)=>{
+        return res.render("home", {
+          title: "Codeial | Home",
+          posts: posts,
+          all_users:users
+        } )
+      })
     })
+    
     .catch((err) => {
       console.error("Error in sending post to home page");
       throw err;

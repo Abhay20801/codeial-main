@@ -6,7 +6,10 @@ const usersController = require('../controllers/users_controller');
 
 // router.get('/', usersController.profile);   // If only /users comes
 
-router.get('/profile',passport.checkAuthentication,usersController.profile);
+router.get('/profile/:id',passport.checkAuthentication,usersController.profile);
+
+// Update the profile info
+router.post('/update/:id',passport.checkAuthentication,usersController.update);
 
 // Routes for signin and sign up
 router.get('/sign-up',usersController.signUp);
