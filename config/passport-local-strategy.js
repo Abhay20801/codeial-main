@@ -10,8 +10,9 @@ const User = require('../models/user');
 // * it contains some inbuilt function
 passport.use(new LocalStrategy({
     usernameField: 'email', 
+    passReqToCallback: true,
     },
-   async function(email,password,done){
+   async function(req,email,password,done){
         // Find the user and establish the identity
         //:email belongs to which is passed on
         // Whenever passport is called email and password is automatically passed on from where we'll see
@@ -19,7 +20,7 @@ passport.use(new LocalStrategy({
         const user = await User.findOne({email:email});
         try{
            if(!user || user.password != password){
-                console.log("Invalid Username/password");
+                req.flash('error','Invalid Username/password');
                 return done(null,false);
             }
 
@@ -27,7 +28,7 @@ passport.use(new LocalStrategy({
             return done(null,user);
         } catch (err){
             if(err){
-                console.log("Error in finding the user",err);
+                req.flash('error',err)
                 return done (err);
             }
         }
