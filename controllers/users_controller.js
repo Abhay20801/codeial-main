@@ -1,5 +1,6 @@
 const User = require('../models/user');
-
+const fs = require('fs');
+const path = require('path');
 // This is one controller which controls Many users
 module.exports.profile = async function(req,res){
   const user = await User.findById(req.params.id);
@@ -12,9 +13,30 @@ module.exports.profile = async function(req,res){
 // Update the profile name and email
 module.exports.update = async function(req,res){
   if(req.user.id == req.params.id){
+    try{
    const user = await User.findByIdAndUpdate(req.params.id,req.body,{new:true});
-    return res.redirect('back');  
-   
+   User.uploadedAvatar(req,res,function(err){
+    if(err){console.log('****Error in Multer :',err);}
+
+   user.name = req.body.name;
+   user.email = req.body.email;
+
+   if(req.file){
+
+    if(user.avatar){
+      fs.unlinkSync(path.join(__dirname,'..',user.avatar));
+    }
+    // This is saving the path of the uploaded file into the avatar field in the user
+    user.avatar = User.avatarPath + '/' + req.file.filename;
+   }
+   user.save();
+   return res.redirect('back');
+   });
+
+    } catch(err){
+      req.flash('error',err);
+      return res.redirect('back');
+    }
   } else{
     return res.status(401).send('Unauthorized');
   }

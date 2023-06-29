@@ -85,7 +85,8 @@ app.use(flash());
 app.use(customMware.setFlash);
    // Use Express route
    app.use('/',require('./routes/index'));
-
+    // Connect upload folder so that server can access it
+    app.use('/uploads',express.static(__dirname+'/uploads'));
 app.listen(port,function(err){
     if(err){
         console.log(`Error in rinning the server: ${port}`);
