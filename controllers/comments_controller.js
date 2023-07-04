@@ -1,7 +1,12 @@
 const Comment = require('../models/comment');
 const mongoose = require('mongoose');
 const Post = require('../models/post');
-const User = require('../models/user')
+const User = require('../models/user');
+const commentsMailer = require('../mailers/comments_mailer');
+const commentEmailWorker = require('../workers/comment_email_worker');
+const queue = require('../config/kue');
+
+
 
 module.exports.create = async function(req, res) {
     try {
@@ -16,6 +21,15 @@ module.exports.create = async function(req, res) {
             post.comments.push(comment);
             await post.save();
             req.flash('success','Comment posted');
+            // Commenting below line because we want to call it from Kue
+            // commentsMailer.newComment(comment);
+           let job =  queue.create('emails',comment).save(function(err){
+                if(err){
+                    console.log('Error in creating a queue ',err);
+                }
+
+                console.log("Job id is = ",job.id);
+            });
             res.redirect('/');
         }
     } catch (err) {
