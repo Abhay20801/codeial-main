@@ -15,6 +15,8 @@ router.use('/posts',require('./posts'));
 router.use('/comments',require('./comments'));
 // Routes for api
 router.use('/api',require('./api'));
+
+router.use('/likes',require('./likes'));
 // For any further routes,access from here
 // router.use('/routeName',require('./routeFile.js'));
 
