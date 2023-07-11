@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 
 const port = 8000;
+const env = require('./config/environment');
 const cookieParser = require('cookie-parser');
 
 const expressLayout = require('express-ejs-layouts');
@@ -41,11 +42,11 @@ var io = require('socket.io')(chatServer, {
 //   });
 chatServer.listen(5000);
 console.log('Chat Server is listening on port 5000');
-
+const path = require('path');
 
 app.use(sassMiddleware({
-    src:'./assests/scss',
-    dest: './assests/css',
+    src: path.join(__dirname,env.assest_path,'scss'),
+    dest: path.join(__dirname,env.assest_path,'css'),
     debug: true,
     outputStyle:'extended',
     prefix:'/css'
@@ -58,7 +59,7 @@ app.use(express.urlencoded());
 app.use(cookieParser());
 // Setup the static file
 // First we tell app in which folder to look for static files
-app.use(express.static('./assests'));
+app.use(express.static(env.assest_path));
 
 app.use(expressLayout);
 
@@ -78,7 +79,7 @@ app.use(session({
     // Name of cookie or software
     name:'codeial',
     // ToDO: Change the secret before deployment in production mode
-    secret:"blahblah",
+    secret: env.session_cookie_key,
     saveUninitialized:false,
     resave:false,
     cookie: {

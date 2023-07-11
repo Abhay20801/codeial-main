@@ -2,19 +2,9 @@ const nodemailer = require("nodemailer");
 const ejs = require('ejs');
 
 const path = require('path')
+const env = require('./environment');
 
-
-const transporter = nodemailer.createTransport({
-    service:"gmail",
-    host: "smtp.gmail.com",
-    port: 587,
-    secure: false,
-    auth: {
-      // TODO: replace `user` and `pass` values from <https://forwardemail.net>
-      user: 'abhay20801@gmail.com',
-      pass: 'sgifgrbebwoknkmu',
-    }
-  });
+const transporter = nodemailer.createTransport(env.smtp);
 
 
   let renderTemplate = (data,relativePath)=> {
