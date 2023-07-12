@@ -1,10 +1,15 @@
 // This receives the connection and emit back acknowledgemt that connection established
 // This is server side
 module.exports.chatSockets = function(socketServer){
-     let io = require('socket.io')(socketServer);
-
+    let io = require('socket.io')(socketServer,{
+        cors: {
+            origin: "http://localhost:8000",
+            methods: ["GET", "POST"]
+          }
+    });
     // socket is an object with lots of properties
      io.sockets.on('connection',function(socket){
+
         console.log('new connection received',socket.id);
 
         socket.on('disconnect',function(){

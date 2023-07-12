@@ -2,11 +2,16 @@ const express = require('express');
 const app = express();
 
 const port = 8000;
+// require morgan . it work as logger
+const logger = require('morgan');
 const env = require('./config/environment');
 const cookieParser = require('cookie-parser');
 
 const expressLayout = require('express-ejs-layouts');
 const db = require('./config/mongoose');
+
+const cors = require('cors')
+app.use(cors())
 
 const session = require('express-session');
 const passport = require('passport');
@@ -27,23 +32,24 @@ const passportGoogle = require('./config/passport-google-oauth2-strategy');
 
 const chatServer = require('http').Server(app);
 const chatSockets = require('./config/chat_sockets').chatSockets(chatServer);
-var io = require('socket.io')(chatServer, {
-    cors: {
-      origin: '*',
-    }
-});
-
-
-// const io = require("socket.io")(chatServer, {
+// var io = require('socket.io')(chatServer, {
 //     cors: {
-//       origin: "http://localhost:8000",
-//       methods: ["GET", "POST"]
+//       origin: '*',
 //     }
-//   });
+// });
+
+// socket = io(ENDPOINT, {  
+//     cors: {
+//     origin: "http://localhost:5000",
+//     credentials: true
+//   },transports : ['websocket'] });
+
+
+
 chatServer.listen(5000);
 console.log('Chat Server is listening on port 5000');
 const path = require('path');
-
+if(env.name == 'development'){
 app.use(sassMiddleware({
     src: path.join(__dirname,env.assest_path,'scss'),
     dest: path.join(__dirname,env.assest_path,'css'),
@@ -51,6 +57,7 @@ app.use(sassMiddleware({
     outputStyle:'extended',
     prefix:'/css'
 }))
+}
 
 // Reading through POST request
 app.use(express.urlencoded());
