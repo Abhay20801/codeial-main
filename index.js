@@ -32,17 +32,6 @@ const passportGoogle = require('./config/passport-google-oauth2-strategy');
 
 const chatServer = require('http').Server(app);
 const chatSockets = require('./config/chat_sockets').chatSockets(chatServer);
-// var io = require('socket.io')(chatServer, {
-//     cors: {
-//       origin: '*',
-//     }
-// });
-
-// socket = io(ENDPOINT, {  
-//     cors: {
-//     origin: "http://localhost:5000",
-//     credentials: true
-//   },transports : ['websocket'] });
 
 
 
@@ -67,6 +56,8 @@ app.use(cookieParser());
 // Setup the static file
 // First we tell app in which folder to look for static files
 app.use(express.static(env.assest_path));
+
+app.use(logger(env.morgan.mode, env.morgan.options));
 
 app.use(expressLayout);
 
