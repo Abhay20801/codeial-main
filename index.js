@@ -4,6 +4,7 @@ const app = express();
 const port = 8000;
 // require morgan . it work as logger
 const logger = require('morgan');
+require('./config/view-helpers')(app);
 const env = require('./config/environment');
 const cookieParser = require('cookie-parser');
 
@@ -42,7 +43,7 @@ if(env.name == 'development'){
 app.use(sassMiddleware({
     src: path.join(__dirname,env.assest_path,'scss'),
     dest: path.join(__dirname,env.assest_path,'css'),
-    debug: true,
+    debug: false,
     outputStyle:'extended',
     prefix:'/css'
 }))
@@ -55,7 +56,7 @@ app.use(express.urlencoded());
 app.use(cookieParser());
 // Setup the static file
 // First we tell app in which folder to look for static files
-app.use(express.static(env.assest_path));
+app.use(express.static(__dirname+"/assests"));
 
 app.use(logger(env.morgan.mode, env.morgan.options));
 
