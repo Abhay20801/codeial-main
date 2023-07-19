@@ -11,6 +11,6 @@ module.exports = (app) => {
             return "/"+filePath;
         }
 
-        return '/' + JSON.parse(fs.readFileSync(path.join(__dirname,'../assests/rev-manifest.json')))[filePath];
+        return '/' + JSON.parse(fs.readFileSync(path.join(__dirname,'../public/assests/rev-manifest.json')))[filePath];
     }
 }
