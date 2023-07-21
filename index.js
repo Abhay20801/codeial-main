@@ -1,11 +1,13 @@
 const express = require('express');
+// require morgan . it work as logger
+const logger = require('morgan');
+const env = require('./config/environment');
 const app = express();
 
 const port = 8000;
-// require morgan . it work as logger
-const logger = require('morgan');
+
 require('./config/view-helpers')(app);
-const env = require('./config/environment');
+
 const cookieParser = require('cookie-parser');
 
 const expressLayout = require('express-ejs-layouts');
@@ -58,6 +60,7 @@ app.use(cookieParser());
 // First we tell app in which folder to look for static files
 app.use(express.static(__dirname+"/assets"));
 
+app.use(express.static(env.asset_path));
 app.use(logger(env.morgan.mode, env.morgan.options));
 
 app.use(expressLayout);
@@ -66,7 +69,8 @@ app.use(expressLayout);
 app.set('layout extractStyles',true);
 app.set('layout extractScripts',true);
 
-
+// Connect upload folder so that server can access it
+  app.use('/uploads',express.static(__dirname+'/uploads'));
 // Set up the view engine
    app.set('view engine','ejs');
     app.set('views','./views');
@@ -110,8 +114,7 @@ app.use(flash());
 app.use(customMware.setFlash);
    // Use Express route
    app.use('/',require('./routes/index'));
-    // Connect upload folder so that server can access it
-    app.use('/uploads',express.static(__dirname+'/uploads'));
+  
 app.listen(port,function(err){
     if(err){
         console.log(`Error in rinning the server: ${port}`);

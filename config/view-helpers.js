@@ -1,4 +1,4 @@
-const env = require('./environment');
+
 const env = require('./environment');
 const fs = require('fs');
 const path = require('path');
@@ -7,7 +7,7 @@ const path = require('path');
 module.exports = (app) => {
 
     app.locals.assetPath = function(filePath){
-        
+        console.log(env.name);
         if(env.name=='development'){
            
             return "/"+filePath;
