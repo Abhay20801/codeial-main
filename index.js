@@ -41,8 +41,8 @@ console.log('Chat Server is listening on port 5000');
 const path = require('path');
 if(env.name == 'development'){
 app.use(sassMiddleware({
-    src: path.join(__dirname,env.assest_path,'scss'),
-    dest: path.join(__dirname,env.assest_path,'css'),
+    src: path.join(__dirname,env.asset_path,'scss'),
+    dest: path.join(__dirname,env.asset_path,'css'),
     debug: false,
     outputStyle:'extended',
     prefix:'/css'
@@ -56,7 +56,7 @@ app.use(express.urlencoded({extended:false}));
 app.use(cookieParser());
 // Setup the static file
 // First we tell app in which folder to look for static files
-app.use(express.static(__dirname+"/assests"));
+app.use(express.static(__dirname+"/assets"));
 
 app.use(logger(env.morgan.mode, env.morgan.options));
 

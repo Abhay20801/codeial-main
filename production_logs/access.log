@@ -309,4 +309,24 @@
 [0mGET / [32m200[0m 24.378 ms - 11889[0m
 [0mGET / [36m304[0m 22.127 ms - -[0m
 [0mGET / [32m200[0m 29.193 ms - 11880[0m
+<<<<<<< HEAD
 >>>>>>> 8ec2e304c3c491e9f4fe9254e95122c9e68e3ff3
+=======
+[0mGET / [32m200[0m 96.893 ms - 11976[0m
+[0mGET / [36m304[0m 70.615 ms - -[0m
+[0mGET /users/sign-out [36m302[0m 30.006 ms - 46[0m
+[0mGET / [32m200[0m 64.886 ms - 7703[0m
+[0mGET /users/sign-in [32m200[0m 17.259 ms - 2108[0m
+[0mPOST /users/create-session [36m302[0m 14.421 ms - 46[0m
+[0mGET / [32m200[0m 70.914 ms - 12245[0m
+[0mPOST /likes/toggle/?id=649d4df08fd748541277ab21&type=Post [32m200[0m 34.791 ms - 57[0m
+[0mPOST /likes/toggle/?id=649d4df08fd748541277ab21&type=Post [32m200[0m 29.691 ms - 60[0m
+[0mPOST /posts/create [32m200[0m 10.970 ms - 242[0m
+[0mPOST /posts/create [32m200[0m 13.698 ms - 242[0m
+[0mGET /posts/destroy/64ba5d040a17ea855e9d7d3d [32m200[0m 25.952 ms - 73[0m
+[0mGET /posts/destroy/64ba5d020a17ea855e9d7d3a [32m200[0m 17.647 ms - 73[0m
+[0mGET / [32m200[0m 110.878 ms - 11976[0m
+[0mGET /users/sign-out [36m302[0m 29.227 ms - 46[0m
+[0mGET / [32m200[0m 45.885 ms - 7703[0m
+[0mGET / [32m200[0m 119.173 ms - 7437[0m
+>>>>>>> daf59fca9f0602347ccc39f7ed82eac9823f59b7

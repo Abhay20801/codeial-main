@@ -8,7 +8,7 @@ class ChatEngine{
 
         // io has been given to us by socket.io file
         // Step1 = sending the connect request
-        this.socket = io.connect('http://localhost:5000');
+        this.socket = io.connect('http://3.26.144.247:5000');
 
         // If there is user email then call connection handler
         if(this.userEmail){
