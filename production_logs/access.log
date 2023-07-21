@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ::ffff:127.0.0.1 - - [21/Jul/2023:00:18:42 +0000] "GET /.env HTTP/1.1" 404 143 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.129 Safari/537.36"
 ::ffff:127.0.0.1 - - [21/Jul/2023:00:18:42 +0000] "POST / HTTP/1.1" 404 140 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.129 Safari/537.36"
 ::ffff:127.0.0.1 - - [21/Jul/2023:00:43:41 +0000] "GET / HTTP/1.1" 200 3178 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36"
@@ -182,3 +183,106 @@
 ::ffff:152.58.77.231 - - [21/Jul/2023:09:00:16 +0000] "GET /js/home_posts-bfe57a592e.js HTTP/1.1" 404 166 "http://3.26.144.247:8000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36 Edg/114.0.1823.82"
 ::ffff:152.58.77.231 - - [21/Jul/2023:09:00:16 +0000] "GET /js/toggle_likes-b3e3866605.js HTTP/1.1" 404 168 "http://3.26.144.247:8000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36 Edg/114.0.1823.82"
 ::ffff:152.58.77.231 - - [21/Jul/2023:09:00:16 +0000] "GET /js/chat_engine-52be1f651d.js HTTP/1.1" 404 167 "http://3.26.144.247:8000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36 Edg/114.0.1823.82"
+=======
+[0mGET / [32m200[0m 116.199 ms - 7350[0m
+[0mGET /favicon.ico [33m404[0m 17.340 ms - 150[0m
+[0mGET /users/sign-in [36m304[0m 13.900 ms - -[0m
+[0mGET / [32m200[0m 56.488 ms - 7377[0m
+[0mGET / [32m200[0m 96.950 ms - 7350[0m
+[0mGET / [36m304[0m 30.835 ms - -[0m
+[0mGET / [36m304[0m 30.902 ms - -[0m
+[0mGET / [36m304[0m 26.809 ms - -[0m
+[0mGET / [36m304[0m 27.479 ms - -[0m
+[0mGET /users/sign-in [36m304[0m 9.232 ms - -[0m
+[0mGET /users/sign-in [36m304[0m 5.697 ms - -[0m
+[0mPOST /users/create-session [36m302[0m 14.987 ms - 72[0m
+[0mGET /users/sign-in [32m200[0m 4.412 ms - 2291[0m
+[0mPOST /users/create-session [36m302[0m 18.535 ms - 46[0m
+[0mGET / [32m200[0m 32.679 ms - 12158[0m
+[0mGET /users/sign-out [36m302[0m 15.235 ms - 46[0m
+[0mGET / [32m200[0m 30.051 ms - 7616[0m
+[0mGET / [32m200[0m 121.216 ms - 7377[0m
+[0mGET / [32m200[0m 99.253 ms - 7350[0m
+[0mGET /favicon.ico [33m404[0m 6.908 ms - 150[0m
+[0mGET / [32m200[0m 92.589 ms - 7350[0m
+[0mGET /favicon.ico [33m404[0m 9.333 ms - 150[0m
+[0mGET / [36m304[0m 46.896 ms - -[0m
+[0mGET / [36m304[0m 62.387 ms - -[0m
+[0mGET /users/sign-in [32m200[0m 12.447 ms - 2021[0m
+[0mPOST /users/create-session [36m302[0m 15.390 ms - 46[0m
+[0mGET / [32m200[0m 42.331 ms - 12158[0m
+[0mPOST /likes/toggle/?id=649d4df08fd748541277ab21&type=Post [32m200[0m 22.685 ms - 57[0m
+[0mPOST /likes/toggle/?id=649d4df08fd748541277ab21&type=Post [32m200[0m 25.331 ms - 60[0m
+[0mPOST /likes/toggle/?id=64a47b9ef1e92ef774b8f6c8&type=Comment [32m200[0m 20.161 ms - 57[0m
+[0mPOST /likes/toggle/?id=64a47b9ef1e92ef774b8f6c8&type=Comment [32m200[0m 23.960 ms - 60[0m
+[0mPOST /likes/toggle/?id=64a47b9ef1e92ef774b8f6c8&type=Comment [32m200[0m 17.619 ms - 57[0m
+[0mGET / [32m200[0m 55.408 ms - 7350[0m
+>>>>>>> 06c7b21d73445e1383df4839cd581dafa6c29b6b
+::ffff:152.58.77.231 - - [21/Jul/2023:09:05:27 +0000] "GET / HTTP/1.1" 304 - "http://3.26.144.247:8000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36 Edg/114.0.1823.82"
+::ffff:152.58.77.231 - - [21/Jul/2023:09:05:27 +0000] "GET /css/layout-744a406b29.css HTTP/1.1" 404 164 "http://3.26.144.247:8000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36 Edg/114.0.1823.82"
+::ffff:152.58.77.231 - - [21/Jul/2023:09:05:27 +0000] "GET /js/home_posts-bfe57a592e.js HTTP/1.1" 404 166 "http://3.26.144.247:8000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36 Edg/114.0.1823.82"
+::ffff:152.58.77.231 - - [21/Jul/2023:09:05:27 +0000] "GET /js/chat_engine-52be1f651d.js HTTP/1.1" 404 167 "http://3.26.144.247:8000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36 Edg/114.0.1823.82"
+::ffff:152.58.77.231 - - [21/Jul/2023:09:05:27 +0000] "GET /js/toggle_likes-b3e3866605.js HTTP/1.1" 404 168 "http://3.26.144.247:8000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36 Edg/114.0.1823.82"
+::ffff:152.58.77.231 - - [21/Jul/2023:09:05:38 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.82"
+::ffff:152.58.77.231 - - [21/Jul/2023:09:05:38 +0000] "GET /css/layout-744a406b29.css HTTP/1.1" 404 164 "http://3.26.144.247:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.82"
+::ffff:152.58.77.231 - - [21/Jul/2023:09:05:38 +0000] "GET /js/home_posts-bfe57a592e.js HTTP/1.1" 404 166 "http://3.26.144.247:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.82"
+::ffff:152.58.77.231 - - [21/Jul/2023:09:05:38 +0000] "GET /js/toggle_likes-b3e3866605.js HTTP/1.1" 404 168 "http://3.26.144.247:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.82"
+::ffff:152.58.77.231 - - [21/Jul/2023:09:05:38 +0000] "GET /js/chat_engine-52be1f651d.js HTTP/1.1" 404 167 "http://3.26.144.247:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.82"
+::ffff:152.58.77.231 - - [21/Jul/2023:09:05:41 +0000] "GET /css/layout-744a406b29.css HTTP/1.1" 404 164 "http://3.26.144.247:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.82"
+::ffff:192.241.236.87 - - [21/Jul/2023:09:07:17 +0000] "GET / HTTP/1.1" 200 4704 "-" "Mozilla/5.0 zgrab/0.x"
+::ffff:40.77.167.237 - - [21/Jul/2023:09:13:42 +0000] "GET / HTTP/1.1" 200 4704 "-" "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm) Chrome/103.0.5060.134 Safari/537.36"
+::ffff:152.58.77.231 - - [21/Jul/2023:09:13:46 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36 Edg/114.0.1823.82"
+::ffff:152.58.77.231 - - [21/Jul/2023:09:13:46 +0000] "GET /css/layout-744a406b29.css HTTP/1.1" 404 164 "http://3.26.144.247:8000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36 Edg/114.0.1823.82"
+::ffff:152.58.77.231 - - [21/Jul/2023:09:13:46 +0000] "GET /js/home_posts-bfe57a592e.js HTTP/1.1" 404 166 "http://3.26.144.247:8000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36 Edg/114.0.1823.82"
+::ffff:152.58.77.231 - - [21/Jul/2023:09:13:46 +0000] "GET /js/toggle_likes-b3e3866605.js HTTP/1.1" 404 168 "http://3.26.144.247:8000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36 Edg/114.0.1823.82"
+::ffff:152.58.77.231 - - [21/Jul/2023:09:13:46 +0000] "GET /js/chat_engine-52be1f651d.js HTTP/1.1" 404 167 "http://3.26.144.247:8000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36 Edg/114.0.1823.82"
+::ffff:40.77.167.157 - - [21/Jul/2023:09:13:46 +0000] "GET /users/sign-in HTTP/1.1" 200 2032 "-" "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm) Chrome/103.0.5060.134 Safari/537.36"
+::ffff:152.58.77.231 - - [21/Jul/2023:09:13:50 +0000] "GET /users/sign-in HTTP/1.1" 304 - "http://3.26.144.247:8000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36 Edg/114.0.1823.82"
+::ffff:152.58.77.231 - - [21/Jul/2023:09:13:50 +0000] "GET /css/layout-744a406b29.css HTTP/1.1" 404 164 "http://3.26.144.247:8000/users/sign-in" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36 Edg/114.0.1823.82"
+::ffff:152.58.77.231 - - [21/Jul/2023:09:13:59 +0000] "POST /users/create-session HTTP/1.1" 302 46 "http://3.26.144.247:8000/users/sign-in" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36 Edg/114.0.1823.82"
+::ffff:152.58.77.231 - - [21/Jul/2023:09:13:59 +0000] "GET / HTTP/1.1" 200 7812 "http://3.26.144.247:8000/users/sign-in" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36 Edg/114.0.1823.82"
+::ffff:152.58.77.231 - - [21/Jul/2023:09:13:59 +0000] "GET /css/layout-744a406b29.css HTTP/1.1" 404 164 "http://3.26.144.247:8000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36 Edg/114.0.1823.82"
+::ffff:152.58.77.231 - - [21/Jul/2023:09:13:59 +0000] "GET /js/home_posts-bfe57a592e.js HTTP/1.1" 404 166 "http://3.26.144.247:8000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36 Edg/114.0.1823.82"
+::ffff:152.58.77.231 - - [21/Jul/2023:09:13:59 +0000] "GET /js/toggle_likes-b3e3866605.js HTTP/1.1" 404 168 "http://3.26.144.247:8000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36 Edg/114.0.1823.82"
+::ffff:152.58.77.231 - - [21/Jul/2023:09:13:59 +0000] "GET /js/chat_engine-52be1f651d.js HTTP/1.1" 404 167 "http://3.26.144.247:8000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36 Edg/114.0.1823.82"
+::ffff:152.58.77.231 - - [21/Jul/2023:09:14:07 +0000] "GET /posts/destroy/64ba028376ae39192e38e409 HTTP/1.1" 302 94 "http://3.26.144.247:8000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36 Edg/114.0.1823.82"
+::ffff:152.58.77.231 - - [21/Jul/2023:09:14:07 +0000] "GET / HTTP/1.1" 200 6067 "http://3.26.144.247:8000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36 Edg/114.0.1823.82"
+::ffff:152.58.77.231 - - [21/Jul/2023:09:14:07 +0000] "GET /css/layout-744a406b29.css HTTP/1.1" 404 164 "http://3.26.144.247:8000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36 Edg/114.0.1823.82"
+::ffff:152.58.77.231 - - [21/Jul/2023:09:14:08 +0000] "GET /js/home_posts-bfe57a592e.js HTTP/1.1" 404 166 "http://3.26.144.247:8000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36 Edg/114.0.1823.82"
+::ffff:152.58.77.231 - - [21/Jul/2023:09:14:08 +0000] "GET /js/toggle_likes-b3e3866605.js HTTP/1.1" 404 168 "http://3.26.144.247:8000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36 Edg/114.0.1823.82"
+::ffff:152.58.77.231 - - [21/Jul/2023:09:14:08 +0000] "GET /js/chat_engine-52be1f651d.js HTTP/1.1" 404 167 "http://3.26.144.247:8000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36 Edg/114.0.1823.82"
+::ffff:127.0.0.1 - - [21/Jul/2023:09:25:08 +0000] "GET / HTTP/1.1" 200 3819 "-" "python-requests/2.31.0"
+::ffff:40.77.167.237 - - [21/Jul/2023:09:29:03 +0000] "GET / HTTP/1.1" 200 3819 "-" "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm) Chrome/103.0.5060.134 Safari/537.36"
+::ffff:40.77.167.157 - - [21/Jul/2023:09:29:28 +0000] "GET /users/sign-in HTTP/1.1" 200 2032 "-" "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm) Chrome/103.0.5060.134 Safari/537.36"
+::ffff:194.156.136.166 - - [21/Jul/2023:09:40:57 +0000] "GET /v2/ HTTP/1.0" 404 142 "-" "Go-http-client/1.1"
+::ffff:127.0.0.1 - - [21/Jul/2023:09:42:09 +0000] "GET / HTTP/1.1" 200 3819 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:98.0) Gecko/20100101 Firefox/98.0"
+::ffff:152.58.77.231 - - [21/Jul/2023:09:54:06 +0000] "GET / HTTP/1.1" 200 5796 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.82"
+::ffff:152.58.77.231 - - [21/Jul/2023:09:54:07 +0000] "GET /css/layout-744a406b29.css HTTP/1.1" 404 164 "http://3.26.144.247:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.82"
+::ffff:152.58.77.231 - - [21/Jul/2023:09:54:07 +0000] "GET /js/home_posts-bfe57a592e.js HTTP/1.1" 404 166 "http://3.26.144.247:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.82"
+::ffff:152.58.77.231 - - [21/Jul/2023:09:54:07 +0000] "GET /js/chat_engine-52be1f651d.js HTTP/1.1" 404 167 "http://3.26.144.247:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.82"
+::ffff:152.58.77.231 - - [21/Jul/2023:09:54:07 +0000] "GET /js/toggle_likes-b3e3866605.js HTTP/1.1" 404 168 "http://3.26.144.247:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.82"
+::ffff:152.58.77.231 - - [21/Jul/2023:09:54:10 +0000] "GET /users/sign-out HTTP/1.1" 302 46 "http://3.26.144.247:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.82"
+::ffff:152.58.77.231 - - [21/Jul/2023:09:54:10 +0000] "GET / HTTP/1.1" 200 4085 "http://3.26.144.247:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.82"
+::ffff:152.58.77.231 - - [21/Jul/2023:09:54:11 +0000] "GET /css/layout-744a406b29.css HTTP/1.1" 404 164 "http://3.26.144.247:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.82"
+::ffff:152.58.77.231 - - [21/Jul/2023:09:54:11 +0000] "GET /js/home_posts-bfe57a592e.js HTTP/1.1" 404 166 "http://3.26.144.247:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.82"
+::ffff:152.58.77.231 - - [21/Jul/2023:09:54:11 +0000] "GET /js/toggle_likes-b3e3866605.js HTTP/1.1" 404 168 "http://3.26.144.247:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.82"
+::ffff:152.58.77.231 - - [21/Jul/2023:09:54:11 +0000] "GET /js/chat_engine-52be1f651d.js HTTP/1.1" 404 167 "http://3.26.144.247:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.82"
+::ffff:152.58.77.231 - - [21/Jul/2023:09:54:18 +0000] "GET /users/sign-in HTTP/1.1" 304 - "http://3.26.144.247:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.82"
+::ffff:152.58.77.231 - - [21/Jul/2023:09:54:18 +0000] "GET /css/layout-744a406b29.css HTTP/1.1" 404 164 "http://3.26.144.247:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.82"
+::ffff:152.58.77.231 - - [21/Jul/2023:09:54:24 +0000] "POST /users/create-session HTTP/1.1" 302 46 "http://3.26.144.247:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.82"
+::ffff:152.58.77.231 - - [21/Jul/2023:09:54:24 +0000] "GET / HTTP/1.1" 200 6065 "http://3.26.144.247:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.82"
+::ffff:152.58.77.231 - - [21/Jul/2023:09:54:25 +0000] "GET /css/layout-744a406b29.css HTTP/1.1" 404 164 "http://3.26.144.247:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.82"
+::ffff:152.58.77.231 - - [21/Jul/2023:09:54:25 +0000] "GET /js/home_posts-bfe57a592e.js HTTP/1.1" 404 166 "http://3.26.144.247:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.82"
+::ffff:152.58.77.231 - - [21/Jul/2023:09:54:25 +0000] "GET /js/toggle_likes-b3e3866605.js HTTP/1.1" 404 168 "http://3.26.144.247:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.82"
+::ffff:152.58.77.231 - - [21/Jul/2023:09:54:25 +0000] "GET /js/chat_engine-52be1f651d.js HTTP/1.1" 404 167 "http://3.26.144.247:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.82"
+::ffff:152.58.77.231 - - [21/Jul/2023:09:54:36 +0000] "POST /posts/create HTTP/1.1" 302 94 "http://3.26.144.247:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.82"
+::ffff:152.58.77.231 - - [21/Jul/2023:09:54:36 +0000] "GET / HTTP/1.1" 200 7299 "http://3.26.144.247:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.82"
+::ffff:152.58.77.231 - - [21/Jul/2023:09:54:37 +0000] "GET /css/layout-744a406b29.css HTTP/1.1" 404 164 "http://3.26.144.247:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.82"
+::ffff:152.58.77.231 - - [21/Jul/2023:09:54:37 +0000] "GET /js/home_posts-bfe57a592e.js HTTP/1.1" 404 166 "http://3.26.144.247:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.82"
+::ffff:152.58.77.231 - - [21/Jul/2023:09:54:37 +0000] "GET /js/toggle_likes-b3e3866605.js HTTP/1.1" 404 168 "http://3.26.144.247:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.82"
+::ffff:152.58.77.231 - - [21/Jul/2023:09:54:37 +0000] "GET /js/chat_engine-52be1f651d.js HTTP/1.1" 404 167 "http://3.26.144.247:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.82"
+::ffff:205.210.31.206 - - [21/Jul/2023:09:54:40 +0000] "GET / HTTP/1.1" 200 4463 "-" "Expanse, a Palo Alto Networks company, searches across the global IPv4 space multiple times per day to identify customers&#39; presences on the Internet. If you would like to be excluded from our scans, please send IP addresses/domains to: scaninfo@paloaltonetworks.com"
+::ffff:127.0.0.1 - - [21/Jul/2023:09:55:49 +0000] "GET /.env HTTP/1.1" 404 143 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.129 Safari/537.36"
+::ffff:127.0.0.1 - - [21/Jul/2023:09:55:50 +0000] "POST / HTTP/1.1" 404 140 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.129 Safari/537.36"
+::ffff:40.77.167.237 - - [21/Jul/2023:09:58:06 +0000] "GET / HTTP/1.1" 200 4463 "-" "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm) Chrome/103.0.5060.134 Safari/537.36"
+::ffff:40.77.167.157 - - [21/Jul/2023:09:58:10 +0000] "GET /users/sign-in HTTP/1.1" 200 2032 "-" "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm) Chrome/103.0.5060.134 Safari/537.36"
