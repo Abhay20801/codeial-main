@@ -217,6 +217,7 @@
 [0mPOST /likes/toggle/?id=64a47b9ef1e92ef774b8f6c8&type=Comment [32m200[0m 23.960 ms - 60[0m
 [0mPOST /likes/toggle/?id=64a47b9ef1e92ef774b8f6c8&type=Comment [32m200[0m 17.619 ms - 57[0m
 [0mGET / [32m200[0m 55.408 ms - 7350[0m
+<<<<<<< HEAD
 >>>>>>> 06c7b21d73445e1383df4839cd581dafa6c29b6b
 ::ffff:152.58.77.231 - - [21/Jul/2023:09:05:27 +0000] "GET / HTTP/1.1" 304 - "http://3.26.144.247:8000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36 Edg/114.0.1823.82"
 ::ffff:152.58.77.231 - - [21/Jul/2023:09:05:27 +0000] "GET /css/layout-744a406b29.css HTTP/1.1" 404 164 "http://3.26.144.247:8000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36 Edg/114.0.1823.82"
@@ -286,3 +287,26 @@
 ::ffff:127.0.0.1 - - [21/Jul/2023:09:55:50 +0000] "POST / HTTP/1.1" 404 140 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.129 Safari/537.36"
 ::ffff:40.77.167.237 - - [21/Jul/2023:09:58:06 +0000] "GET / HTTP/1.1" 200 4463 "-" "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm) Chrome/103.0.5060.134 Safari/537.36"
 ::ffff:40.77.167.157 - - [21/Jul/2023:09:58:10 +0000] "GET /users/sign-in HTTP/1.1" 200 2032 "-" "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm) Chrome/103.0.5060.134 Safari/537.36"
+=======
+[0mGET /users/sign-in [36m304[0m 23.687 ms - -[0m
+[0mPOST /users/create-session [36m302[0m 25.673 ms - 46[0m
+[0mGET / [32m200[0m 91.523 ms - 12158[0m
+[0mGET /users/sign-out [36m302[0m 11.359 ms - 46[0m
+[0mGET / [32m200[0m 27.089 ms - 7616[0m
+[0mGET /users/sign-in [36m304[0m 5.547 ms - -[0m
+[0mPOST /users/create-session [36m302[0m 6.984 ms - 46[0m
+[0mGET / [32m200[0m 28.113 ms - 12158[0m
+[0mGET / [32m200[0m 29.325 ms - 11889[0m
+[0mPOST /likes/toggle/?id=64996e07a73a657cad187645&type=Comment [32m200[0m 22.665 ms - 57[0m
+[0mPOST /likes/toggle/?id=64996e07a73a657cad187645&type=Comment [32m200[0m 14.558 ms - 60[0m
+[0mGET / [36m304[0m 29.834 ms - -[0m
+[0mGET / [36m304[0m 25.550 ms - -[0m
+[0mGET /users/sign-out [36m302[0m 8.547 ms - 46[0m
+[0mGET / [32m200[0m 24.971 ms - 7616[0m
+[0mGET /users/sign-in [36m304[0m 12.193 ms - -[0m
+[0mPOST /users/create-session [36m302[0m 6.717 ms - 46[0m
+[0mGET / [32m200[0m 23.651 ms - 12158[0m
+[0mGET / [32m200[0m 24.378 ms - 11889[0m
+[0mGET / [36m304[0m 22.127 ms - -[0m
+[0mGET / [32m200[0m 29.193 ms - 11880[0m
+>>>>>>> 8ec2e304c3c491e9f4fe9254e95122c9e68e3ff3
