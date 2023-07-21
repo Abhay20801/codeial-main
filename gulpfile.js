@@ -1,6 +1,6 @@
 // Problems = del new version i.e 7.0.0 doesnot have sync so use npm i del@4.1.1
 
-// assets == assests (in my case)
+// assets == assets (in my case)
 
 
 const gulp = require('gulp');
@@ -15,25 +15,25 @@ gulp.task('css', function (done) {
   // run command `gulp css` in the terminal
   // ** stands for any folder & * stands for any file
   gulp
-    .src('./assests/css/**/*.css')
+    .src('./assets/css/**/*.css')
     .pipe(cssnano())
-    .pipe(gulp.dest('./assests.css'));
+    .pipe(gulp.dest('./assets.css'));
 
   // renaming CSS files using gulp-rev
-  // and storing them in './public/assests'
+  // and storing them in './public/assets'
   // and also, creating a manifest.json file
   import('gulp-rev').then((rev) => {
     gulp
-      .src('./assests/**/*.css')
+      .src('./assets/**/*.css')
       .pipe(rev.default())
-      .pipe(gulp.dest('./public/assests'))
+      .pipe(gulp.dest('./public/assets'))
       .pipe(
         rev.default.manifest({
           cwd: 'public',
           merge: true
         })
       )
-      .pipe(gulp.dest('./public/assests'));
+      .pipe(gulp.dest('./public/assets'));
     done(); // callback function
   });
 });
@@ -44,25 +44,25 @@ gulp.task('js', function (done) {
   // minifying js files
   // ** stands for any folder & * stands for any file
   gulp
-    .src('./assests/js/**/*.js')
+    .src('./assets/js/**/*.js')
     .pipe(uglify())
-    .pipe(gulp.dest('./assests.js'));
+    .pipe(gulp.dest('./assets.js'));
 
   // renaming JS files using gulp-rev
-  // and storing them in './public/assests'
+  // and storing them in './public/assets'
   // and also, creating a manifest.json file
   import('gulp-rev').then((rev) => {
     gulp
-      .src('./assests/**/*.js')
+      .src('./assets/**/*.js')
       .pipe(rev.default())
-      .pipe(gulp.dest('./public/assests'))
+      .pipe(gulp.dest('./public/assets'))
       .pipe(
         rev.default.manifest({
           cwd: 'public',
           merge: true
         })
       )
-      .pipe(gulp.dest('./public/assests'));
+      .pipe(gulp.dest('./public/assets'));
     done(); // callback function
   });
 });
@@ -72,35 +72,35 @@ gulp.task('images', function (done) {
   import('gulp-imagemin').then((imagemin) => {
     import('gulp-rev').then((rev) => {
       gulp
-        .src('./assests/**/*.+(png|jpg|gif|svg|jpeg)')
+        .src('./assets/**/*.+(png|jpg|gif|svg|jpeg)')
         .pipe(imagemin.default())
         .pipe(rev.default())
-        .pipe(gulp.dest('./public/assests'))
+        .pipe(gulp.dest('./public/assets'))
         .pipe(
           rev.default.manifest({
             cwd: 'public',
             merge: true
           })
         )
-        .pipe(gulp.dest('./public/assests'));
+        .pipe(gulp.dest('./public/assets'));
       done();
     });
   });
 });
 
 
-gulp.task('clean:assests', function (done) {
+gulp.task('clean:assets', function (done) {
   import('del').then((del) => {
-    del.default.sync('./public/assests');
+    del.default.sync('./public/assets');
     done();
   });
 });
 
 gulp.task(
   'build',
-  gulp.series('clean:assests', 'css', 'js', 'images'),
+  gulp.series('clean:assets', 'css', 'js', 'images'),
   function (done) {
-    console.log('Building assests...');
+    console.log('Building assets...');
     done();
   }
 );
