@@ -44,7 +44,7 @@ const accessLogStream = rfs.createStream('access.log', {
  const production = {
     name: 'production',
     // assest_path : process.env.CODEIAL_ASSET_PATH,
-    asset_path : '/' + process.env.CODEIAL_ASSET_PATH,
+    asset_path :process.env.CODEIAL_ASSET_PATH,
     session_cookie_key : process.env.CODEIAL_SESSION_COOKIE_KEY,
     db: process.env.CODEIAL_DB,
     smtp: {
