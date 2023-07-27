@@ -18,7 +18,7 @@ const accessLogStream = rfs.createStream('access.log', {
     name: 'development',
     asset_path : '/assets',
     session_cookie_key : 'blahblah',
-    db: 'codeial_developement',
+    db: 'mongodb://127.0.0.1:27017/codeial_developement',
     smtp: {
         service:"gmail",
         host: "smtp.gmail.com",
@@ -44,7 +44,7 @@ const accessLogStream = rfs.createStream('access.log', {
  const production = {
     name: 'production',
     // assest_path : process.env.CODEIAL_ASSET_PATH,
-    asset_path : '/' + process.env.CODEIAL_ASSET_PATH,
+    asset_path : process.env.CODEIAL_ASSET_PATH,
     session_cookie_key : process.env.CODEIAL_SESSION_COOKIE_KEY,
     db: process.env.CODEIAL_DB,
     smtp: {
@@ -68,4 +68,4 @@ const accessLogStream = rfs.createStream('access.log', {
       }
  }
 
- module.exports = eval(process.env.CODEIAL_ENVIRONMENT)== undefined ? development:eval(process.env.CODEIAL_ENVIRONMENT);
+ module.exports = eval(process.env.CODEIAL_ENVIRONMENT) == undefined ? development:eval(process.env.CODEIAL_ENVIRONMENT);
