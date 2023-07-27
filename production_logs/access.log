@@ -195,3 +195,12 @@
 [0mGET /users/sign-in [36m304[0m 15.407 ms - -[0m
 [0mGET /users/sign-in [36m304[0m 27.873 ms - -[0m
 [0mGET / [36m304[0m 69.525 ms - -[0m
+[0mGET / [36m304[0m 172.073 ms - -[0m
+[0mGET /users/sign-in [36m304[0m 24.256 ms - -[0m
+[0mPOST /users/create-session [36m302[0m 26.326 ms - 46[0m
+[0mGET / [32m200[0m 69.978 ms - 12464[0m
+[0mPOST /likes/toggle/?id=649d4df08fd748541277ab21&type=Post [32m200[0m 45.387 ms - 57[0m
+[0mPOST /likes/toggle/?id=649d4df08fd748541277ab21&type=Post [32m200[0m 30.423 ms - 60[0m
+[0mPOST /likes/toggle/?id=64a47b9ef1e92ef774b8f6c8&type=Comment [32m200[0m 22.128 ms - 57[0m
+[0mPOST /likes/toggle/?id=64a47b9ef1e92ef774b8f6c8&type=Comment [32m200[0m 25.196 ms - 60[0m
+[0mGET / [32m200[0m 141.060 ms - 12195[0m

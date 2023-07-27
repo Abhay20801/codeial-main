@@ -87,7 +87,7 @@ app.use(session({
     resave:false,
     cookie: {
         // No of seconds in ms
-        maxAge: (1000 * 60 * 100)
+        maxAge: (1000 * 60 * 1000)
     },
     store: MongoStore.create(
         {
