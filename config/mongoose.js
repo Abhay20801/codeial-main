@@ -8,7 +8,7 @@ const options = {
     
     // Specify the write concern mode as 'majority'
     writeConcern: {
-      w: 'majority1',
+      w: 'majority',
       wtimeout: 0,
     },
   };
