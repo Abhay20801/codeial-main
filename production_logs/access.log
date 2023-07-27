@@ -204,3 +204,11 @@
 [0mPOST /likes/toggle/?id=64a47b9ef1e92ef774b8f6c8&type=Comment [32m200[0m 22.128 ms - 57[0m
 [0mPOST /likes/toggle/?id=64a47b9ef1e92ef774b8f6c8&type=Comment [32m200[0m 25.196 ms - 60[0m
 [0mGET / [32m200[0m 141.060 ms - 12195[0m
+[0mGET / [36m304[0m 81.383 ms - -[0m
+[0mPOST /likes/toggle/?id=649d4df08fd748541277ab21&type=Post [32m200[0m 16.951 ms - 57[0m
+[0mPOST /likes/toggle/?id=649d4df08fd748541277ab21&type=Post [32m200[0m 13.169 ms - 60[0m
+[0mGET / [36m304[0m 68.519 ms - -[0m
+[0mPOST /likes/toggle/?id=649d4df08fd748541277ab21&type=Post [32m200[0m 15.951 ms - 57[0m
+[0mPOST /likes/toggle/?id=649d4df08fd748541277ab21&type=Post [32m200[0m 14.078 ms - 60[0m
+[0mPOST /posts/create [32m200[0m 6.080 ms - 239[0m
+[0mGET /posts/destroy/64c2c4aceea5addb7a7764a4 [32m200[0m 12.628 ms - 73[0m

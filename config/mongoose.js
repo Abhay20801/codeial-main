@@ -1,7 +1,18 @@
 const mongoose = require('mongoose');
 
 const env = require('./environment');
-console.log(`${env.db}`);
+// MongoDB connection options
+const options = {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    
+    // Specify the write concern mode as 'majority'
+    writeConcern: {
+      w: 'majority',
+      wtimeout: 0,
+    },
+  };
+console.log(`${env.db}`,options);
 mongoose.connect(`${env.db}`);
 
 const db = mongoose.connection;
